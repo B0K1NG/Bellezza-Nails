@@ -37,3 +37,7 @@ As the Bellezza Nails website evolves, anticipate the addition of new features, 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/bellezza-nails.git
+2. Open the home.html file in your browser to view the home page.
+3.Navigate through the website, and engage with the quality content.
+
+Feel free to contribute, report issues, or suggest improvements to make the Monteina Tyre Shop website even better! Thank you for your interest!
