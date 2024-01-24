@@ -1,9 +1,14 @@
-body {
-  color: #f0d5a9;
-  background-color: lightgray;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat";
-  scroll-behavior: smooth;
+  font-family: "Roboto", 'Times New Roman', Times, serif;
+}
+
+
+body {
+  height: 100vh;
+  background-image: url(../image/nail-background.jpg);
+  background-size: cover;
+  background-position: center;
 }

@@ -2,29 +2,57 @@
 <html>
 <head>
   <title>Bellezza Nails</title>
+  <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/general.css">
   <link rel="stylesheet" href="../css/home.css"> 
+  <link rel="stylesheet" href="../css/header.css"> 
 </head>
 
   <body>
 
    <!-- Header Section -->
-    <header class="header">
-    <nav class="navbar-left">
-      <a href="home.html" class="active">Namai</a>
-      <a href="about.html">Apie mus</a>  
-    </nav>
+   <header>
+      <div class="navbar">
+    <div class="logo"><a href="#">Bellezza Nails</a></div>
+    <ul class="links">
+      <li><a href="home.html">Namai</a></li>
+      <li><a href="about.html">Apie mus</a></li>
+      <li><a href="services.html">Paslaugos</a></li>
+      <li><a href="contacts.html">Kontaktai</a></li>
+    </ul>
+    <div class="toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+    <div class="dropdown-menu">
+      <li><a href="home.html">Namai</a></li>
+      <li><a href="about.html">Apie mus</a></li>
+      <li><a href="services.html">Paslaugos</a></li>
+      <li><a href="contacts.html">Kontaktai</a></li>
+    </div>
+</header>
 
-    <a href="#" class="logo">Bellezza Nails</a>
+<script>
+  const toggleBtn = document.querySelector('.toggle-btn')
+  const toggleBtnIcon = document.querySelector('.toggle-btn i')
+  const dropDownMenu = document.querySelector('.dropdown-menu')
 
-    <nav class="navbar-right">
-      <a href="services.html">Paslaugos</a>
-      <a href="contacts.html">Kontaktai</a>
-    </nav>
+  toggleBtn.onclick = function () {
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
+  }
+</script>
 
     <main>
 
